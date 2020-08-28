@@ -1,0 +1,69 @@
+#scoreboard {
+    border: 3px solid white;
+    width: 230px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 4em;
+    position: relative;
+}
+
+#user-label, #comp-label {
+    top: 25%;
+    position: absolute;
+    font-size: 0.25em;
+    text-transform: uppercase;
+}
+
+#user-label {
+    left: -29px;
+}
+
+#comp-label {
+    right: -32px;
+}
+
+#choices {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    font-size: 4em;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice {
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.choice:hover {
+    background-color: #007bff !important;
+}
+
+.choice > i {
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.winner {
+    border-color: yellowgreen;
+    box-shadow: 0 0 40px green;
+}
+
+.loser {
+    border-color: red;
+    box-shadow: 0 0 40px crimson;
+}
+
+.draw {
+    border-color: darkgray;
+    box-shadow: 0 0 40px slategray;
+}
